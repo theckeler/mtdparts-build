@@ -22,9 +22,7 @@ const MenuLink = ({ link, ariaCurrent, hasSub }) => {
         {...ariaCurrent}
         {...hasSub}
         onClick={openSubMenu}
-        className={`nav-link d-block w-100 py-3 d-block d-flex ${
-          hasSub && "dropdown"
-        }`}
+        className={`nav-link d-block w-100 py-3 d-flex ${hasSub && "dropdown"}`}
       >
         {link.title}
         {hasSub && (

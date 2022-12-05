@@ -8,6 +8,7 @@ $body-color: #262626;
 $btn-border-radius: rem(4px);
 $link-color: #059353;
 $nav-link-color: #262626;
+$transparent-color: transparent;
 
 $theme-colors: (
   "primary": #059353,
@@ -20,6 +21,14 @@ $theme-colors: (
 $colors: (
   "green": #059353,
 );
+
+$nav-tabs-border-color: #d3d3d3;
+$nav-tabs-border-radius: 0;
+$nav-tabs-border-width: em(2);
+$nav-tabs-link-active-color: #262626;
+$nav-tabs-link-active-bg: #e0f4ed;
+$nav-tabs-link-active-border-color: $transparent-color $transparent-color
+  #059353;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
