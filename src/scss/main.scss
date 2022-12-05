@@ -35,6 +35,10 @@ $colors: (
   font-size: ($font-size-base * 0.45);
 }
 
+.mh-0 {
+  max-height: 0;
+}
+
 $hamburgerColor: #e1e1e1;
 .btn-hamburger {
   @include button-variant(
@@ -55,7 +59,7 @@ $hamburgerColor: #e1e1e1;
   //   }
 
   &:hover {
-    background-color: $link-color;
+    background-color: $hamburgerColor;
   }
 }
 
