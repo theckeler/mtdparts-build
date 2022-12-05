@@ -1,2 +1,85 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin-ext";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+@import "./_functions.scss";
+
+$bg-color: #262626;
+$body-color: #262626;
+$btn-border-radius: rem(4px);
+$link-color: #059353;
+$nav-link-color: #262626;
+
+$theme-colors: (
+  "primary": #059353,
+  "secondary": #262626,
+  "success": #059353,
+  "light": #e8e8e8,
+  "dark": #d2d2d2,
+);
+
+$colors: (
+  "green": #059353,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.fs-7 {
+  font-size: ($font-size-base * 0.85);
+}
+
+.fs-8 {
+  font-size: ($font-size-base * 0.65);
+}
+
+.fs-9 {
+  font-size: ($font-size-base * 0.45);
+}
+
+$hamburgerColor: #e1e1e1;
+.btn-hamburger {
+  @include button-variant(
+    $hamburgerColor,
+    darken($hamburgerColor, 7.5%),
+    darken($hamburgerColor, 10%),
+    lighten($hamburgerColor, 5%),
+    lighten($hamburgerColor, 10%),
+    darken($hamburgerColor, 30%)
+  );
+  min-width: em(48);
+  min-height: em(48);
+  padding: em(4);
+  border-width: rem(0);
+
+  //   &:active {
+  //     background-color: navy;
+  //   }
+
+  &:hover {
+    background-color: $link-color;
+  }
+}
+
+.max-w-48 {
+  max-width: em(48);
+}
+
+.max-h-48 {
+  max-width: em(48);
+}
+
+.max-w-25 {
+  max-width: em(25);
+}
+
+.max-h-25 {
+  max-height: em(25);
+}
+
+.max-w-120 {
+  max-width: em(120);
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
