@@ -1,4 +1,6 @@
 import MenuMain from "./MainMenu/MenuMain";
+import MenuMainExtras from "./MainMenu/MenuMainExtras";
+
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as IconEatHam } from "../images/hamburger.svg";
 import { ReactComponent as IconEatHamClose } from "../images/hamburger-close.svg";
@@ -29,7 +31,7 @@ const Nav = ({ menuData }) => {
 
   return (
     <nav
-      className="bg-light active"
+      className="bg-light"
       aria-labelledby="main-menu-desc"
       aria-label="Main Nav"
       role="navigation"
@@ -66,6 +68,9 @@ const Nav = ({ menuData }) => {
           <a href="/" className="w-100" aria-label="Link to Home">
             <Logo />
           </a>
+        </li>
+        <li className="ms-auto">
+          <MenuMainExtras />
         </li>
       </ul>
 
