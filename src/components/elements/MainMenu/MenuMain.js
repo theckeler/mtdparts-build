@@ -4,7 +4,10 @@ import MenuMainSearch from "./MenuMainSearch";
 
 const Nav = ({ menuData }) => {
   return (
-    <div className="overflow-hidden mh-0 vh-100" id="main-menu">
+    <div
+      className="overflow-hidden remove-scrollbar mh-0 vh-100"
+      id="main-menu"
+    >
       <ul
         className="min-vw-100 min-vh-100 viewport-width navbar-collapse nav list-unstyled flex-column pb-5"
         aria-label="Main Menu"

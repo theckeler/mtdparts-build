@@ -40,41 +40,42 @@ const Nav = ({ menuData }) => {
       <h2 id="main-menu-desc" className="visually-hidden">
         Main Menu
       </h2>
+      <div className="container-md">
+        <ul className="d-flex list-unstyled align-items-center py-2 px-2 mb-0">
+          <li className="main-menu-button max-w-48" id="main-menu-button">
+            <button
+              aria-haspopup="true"
+              aria-controls="main-menu"
+              type="button"
+              aria-label="Open Menu"
+              tabIndex="0"
+              onClick={openMenu}
+              data-toggle="collapse"
+              data-target="#main-menu"
+              className="btn btn-hamburger hamburger"
+              aria-expanded="false"
+            >
+              <span className="">
+                <IconEatHam />
+              </span>
+              <span className="d-none">
+                <IconEatHamClose />
+              </span>
+              <span className="visually-hidden">Toggle Navigation</span>
+            </button>
+          </li>
+          <li className="max-w-120 ms-2 px-1">
+            <a href="/" className="w-100" aria-label="Link to Home">
+              <Logo />
+            </a>
+          </li>
+          <li className="ms-auto">
+            <MenuMainExtras />
+          </li>
+        </ul>
 
-      <ul className="d-flex list-unstyled align-items-center py-2 px-2 mb-0">
-        <li className="main-menu-button max-w-48" id="main-menu-button">
-          <button
-            aria-haspopup="true"
-            aria-controls="main-menu"
-            type="button"
-            aria-label="Open Menu"
-            tabIndex="0"
-            onClick={openMenu}
-            data-toggle="collapse"
-            data-target="#main-menu"
-            className="btn btn-hamburger hamburger"
-            aria-expanded="false"
-          >
-            <span className="">
-              <IconEatHam />
-            </span>
-            <span className="d-none">
-              <IconEatHamClose />
-            </span>
-            <span className="visually-hidden">Toggle Navigation</span>
-          </button>
-        </li>
-        <li className="max-w-120 ms-2 px-1">
-          <a href="/" className="w-100" aria-label="Link to Home">
-            <Logo />
-          </a>
-        </li>
-        <li className="ms-auto">
-          <MenuMainExtras />
-        </li>
-      </ul>
-
-      <MenuMain {...{ menuData }} />
+        <MenuMain {...{ menuData }} />
+      </div>
     </nav>
   );
 };
