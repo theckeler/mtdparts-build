@@ -18,6 +18,7 @@ const ImgTitleBlock = ({ block }) => {
           copy={block.button.copy}
           url={block.button.url}
           addClass="bg-white border border-secondary"
+          addLabel={block.title}
           //addClick=""
         />
       )}
