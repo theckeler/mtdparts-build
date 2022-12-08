@@ -1,6 +1,6 @@
-import MenuMainLink from "./MenuMainLink";
-import MenuMainExtras from "./MenuMainExtras";
-import MenuMainSearch from "./MenuMainSearch";
+import MenuMainLink from "./MainMenu/MenuMainLink";
+import MenuMainExtras from "./MainMenu/MenuMainExtras";
+import MenuMainSearch from "./MainMenu/MenuMainSearch";
 
 const Nav = ({ menuData }) => {
   return (
@@ -9,7 +9,7 @@ const Nav = ({ menuData }) => {
       id="main-menu"
     >
       <ul
-        className="min-vw-100 min-vh-100 viewport-width navbar-collapse nav list-unstyled flex-column pb-5"
+        className="min-w-100 min-vh-100 viewport-width navbar-collapse nav list-unstyled flex-column pb-5"
         aria-label="Main Menu"
         role="menu"
       >

@@ -8,7 +8,7 @@ import menuData from "./data/menu.json";
 const Index = () => {
   return (
     <>
-      <header className="position-sticky top-0">
+      <header className="position-sticky top-0" style={{ zIndex: "1001" }}>
         <Nav {...{ menuData }} />
       </header>
       <main role="main">

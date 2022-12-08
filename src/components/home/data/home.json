@@ -1,327 +1,77 @@
 {
-  "orders": [
-    {
-      "orderNum": "29323-32434",
-      "type": "online",
-      "date": "August 12, 2022",
-      "total": 3597,
-      "paymentMethod": "Visa - Last digits: 1234",
-      "ship": 200,
-      "products": [
-        {
-          "delivered": "Sept 1, 2022",
-          "tracking": "RA204167770US",
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
-          "product": "XT1 LT46",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 2599,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Manuals",
-              "url": "/"
-            },
-            {
-              "title": "GUIDE",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        },
-        {
-          "delivered": "Sept 1, 2022",
-          "tracking": "RA204167770US",
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-          "product": "1X 21\" LHP Snow Blower",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 799,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "GUIDE",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        },
-        {
-          "delivered": "Sept 4, 2022",
-          "tracking": "RA130888865US",
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-          "product": "CS16E",
-          "price": 199,
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "orderNum": "23234-23234",
-      "type": "dealer",
-      "date": "August 2, 2022",
-      "total": 418,
-      "dealer": {
-        "name": "Worcester Sales and Service, Inc",
-        "address": "34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039"
-      },
-      "paymentMethod": "Visa - Last digits: 1234",
-      "ship": 100,
-      "products": [
-        {
-          "delivered": "August 2, 2022",
-          "tracking": "RA541290323US",
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9d47613f/products/Equipment/CubCadet_HT24E_2000x2000_2.jpg",
-          "product": "HT24E",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 169,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        },
-        {
-          "delivered": "August 2, 2022",
-          "tracking": "RA541290323US",
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwac98f5d4/products/Equipment/Cub_Cadet_STE15E_2000x2000_5.jpg",
-          "product": "ST15E",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 249,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Manuals",
-              "url": "/"
-            },
-            {
-              "title": "GUIDE",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "orderNum": "5677-2324",
-      "type": "cancelled",
-      "date": "August 2, 2022",
-      "total": 123.23,
-      "ship": 60,
-      "dealer": {
-        "name": "Worcester Sales and Service, Inc",
-        "address": "34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039"
-      },
-      "products": [
-        {
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9d47613f/products/Equipment/CubCadet_HT24E_2000x2000_2.jpg",
-          "product": "HT24E",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 169,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        },
-        {
-          "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwac98f5d4/products/Equipment/Cub_Cadet_STE15E_2000x2000_5.jpg",
-          "product": "ST15E",
-          "copy": "Maecenas id sem arcu. Nam rhoncus pharetra nisl, sed tristique urna euismod in.",
-          "price": 249,
-          "buttons": [
-            {
-              "title": "Parts",
-              "url": "/"
-            },
-            {
-              "title": "Specifications",
-              "url": "/"
-            },
-            {
-              "title": "Manuals",
-              "url": "/"
-            },
-            {
-              "title": "GUIDE",
-              "url": "/"
-            },
-            {
-              "title": "Instructions",
-              "url": "/"
-            },
-            {
-              "title": "Buy Again",
-              "url": "/"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "myProducts": [
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
-      "product": "XT1 LT46"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-      "product": "1X 21\" LHP Snow Blower"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-      "product": "CS16E"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-      "product": "LB600E"
-    }
-  ],
-  "myList1": [
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
-      "product": "XT1 LT46"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-      "product": "1X 21\" LHP Snow Blower"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-      "product": "CS16E"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-      "product": "LB600E"
-    }
-  ],
-  "myList2": [
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-      "product": "1X 21\" LHP Snow Blower"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-      "product": "CS16E"
-    },
-    {
-      "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-      "product": "LB600E"
-    }
-  ],
-  "myLists": [
-    [
+  "shop": {
+    "h2": "Shop With Confidence",
+    "copy": "Because of overwhelming demand combined with the situation we’re all experiencing, delivery delays may occur. We are working hard to process your order and deliver your parts and equipment to you as timely as possible. We thank you for your business, and your patience, as we navigate through these tough times together.",
+    "blocks": [
       {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw8f055b11/products/Equipment/Cub-Cadet_XT1LT46_New_2000x2000_8.jpg",
-        "product": "XT1 LT46"
+        "icon": "iconShipping",
+        "iconAddClass": "max-w-160",
+        "title": "Fast, Free Shipping",
+        "copy": "Parts orders over $45 ship free.<sup>*</sup> Delivery for standard shipping averages 5-7 business days for equipment and 3-5 days for parts.",
+        "small": "<sup>*</sup> Some exclusions apply. <a href=\"#top\">Read full shipping policy</a>",
+        "addClass": ""
       },
       {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-        "product": "1X 21\" LHP Snow Blower"
+        "icon": "iconReturns",
+        "iconAddClass": "max-w-120",
+        "title": "Hassle-Free Parts Returns",
+        "copy": "We’ll make sure you get the right part. We will work with you to ensure you receive the correct replacement part for your machine and that you receive credit for your part return.<sup>*</sup>",
+        "small": "<sup>*</sup> Some exclusions apply. <a href=\"#top\">Read full shipping policy</a>",
+        "addClass": ""
       },
       {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-        "product": "CS16E"
-      },
-      {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-        "product": "LB600E"
-      }
-    ],
-    [
-      {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg",
-        "product": "1X 21\" LHP Snow Blower"
-      },
-      {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg",
-        "product": "CS16E"
-      },
-      {
-        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw532f8707/products/Equipment/Cub_Cadet_LB600E_wo_Battery_2000x2000_8.jpg",
-        "product": "LB600E"
+        "icon": "iconChat",
+        "iconAddClass": "max-w-120",
+        "title": "Live Chat with Experts",
+        "copy": "Our outdoor power equipment experts are just one click away through Live Chat. Available Mon - Fri 8:30am - 5pm EDT",
+        "small": "Phone support also available: 1-800-269-6215",
+        "addClass": "border-bottom-0"
       }
     ]
-  ]
+  },
+  "howToGuides": {
+    "h2": "How-To Guides",
+    "blocks": [
+      {
+        "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw2f30f2b8/knowledge-center/images-mtdparts-com/spring-maintenance-riding-lawn-mower.jpg",
+        "title": "How To Repair the Drive Belt on a Riding Lawn Mower",
+        "copy": "For the do-it-yourself homeowner, here are some step-by-step instructions on how to change a riding lawn mower drive belt.",
+        "addClass": "",
+        "button": {
+          "copy": "Read More",
+          "url": "https://www.mtdparts.com/en_US/knowledge-how-to-change-riding-lawn-mower-drive-belt-repairs.html"
+        }
+      },
+      {
+        "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwaee986e5/knowledge-center/Trimmer-Line-Replacement-Install-in-Traditional-Bump-Head.png",
+        "title": "How to Install String Trimmer Line in a Traditional Bump Head",
+        "copy": "Learn how to do a trimmer line replacement to prepare for a season of lawn care and maintenance.",
+        "addClass": "",
+        "button": {
+          "copy": "Read More",
+          "url": "https://www.mtdparts.com/en_US/knowledge-trimmer-line-replacement-knowledge.html"
+        }
+      },
+      {
+        "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwa7a878a4/knowledge-center/Walk-Behind-Lawn-Mower-Blade-Replacement-Instructions.png",
+        "title": "How to Change the Oil in Your Walk-Behind Lawn Mower",
+        "copy": "Routine lawn mower maintenance, like changing your oil, can help extend the life of your machine. Follow these step-by-step instructions on how to change the oil in a walk-behind lawn mower.",
+        "addClass": "",
+        "button": {
+          "copy": "Read More",
+          "url": "https://www.mtdparts.com/en_US/how-to-change-oil-walk-behind-and-push-mower/knowledge-walk-behind-oil-change-maintenance.html"
+        }
+      },
+      {
+        "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwb45803b0/knowledge-center/Lawn-Mower-Parts-Change-a-Walk-Behind-Lawn-Mower-Air-Filter-from-MTD.png",
+        "title": "Troubleshooting When Your Lawn Mower Will Not Start",
+        "copy": "What to do when your walk-behind or riding lawn mower won't start? Here are some troubleshooting tips to find out what went wrong, what lawn mower parts you need to fix it and if you'll need to take your lawn mower in for professional service.",
+        "addClass": "border-bottom-0",
+        "button": {
+          "copy": "Read More",
+          "url": "https://www.mtdparts.com/en_US/knowledge-lawn-mower-wont-start.html"
+        }
+      }
+    ]
+  }
 }

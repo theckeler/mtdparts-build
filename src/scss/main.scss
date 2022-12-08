@@ -9,6 +9,7 @@ $btn-border-radius: rem(4px);
 $link-color: #059353;
 $nav-link-color: #262626;
 $transparent-color: transparent;
+$border-color: #d2d2d2;
 
 $theme-colors: (
   "primary": #059353,
@@ -88,6 +89,10 @@ $hamburgerColor: #e1e1e1;
   max-width: em(120);
 }
 
+.max-w-160 {
+  max-width: em(160);
+}
+
 .max-h-25 {
   max-height: em(25);
 }
@@ -98,6 +103,10 @@ $hamburgerColor: #e1e1e1;
 svg {
   width: 100%;
   height: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .remove-scrollbar {

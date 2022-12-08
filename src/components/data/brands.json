@@ -1,42 +1,42 @@
 [
   {
     "title": "Yard-Man",
-    "img": "yardMan",
+    "img": "logoYardMan",
     "url": "#top"
   },
   {
     "title": "Remington",
-    "img": "remington",
+    "img": "logoRemington",
     "url": "#top"
   },
   {
     "title": "White Outdoor",
-    "img": "whiteOutdoor",
+    "img": "logoWhiteOutdoor",
     "url": "#top"
   },
   {
     "title": "Yard-Machines",
-    "img": "yardMachines",
+    "img": "logoYardMachines",
     "url": "#top"
   },
   {
     "title": "Craftsman",
-    "img": "craftsman",
+    "img": "logoCraftsman",
     "url": "#top"
   },
   {
     "title": "Troy-Bilt",
-    "img": "troyBilt",
+    "img": "logoTroyBilt",
     "url": "#top"
   },
   {
     "title": "Bolens",
-    "img": "bolens",
+    "img": "logoBolens",
     "url": "#top"
   },
   {
     "title": "Robomow",
-    "img": "robomow",
+    "img": "logoRobomow",
     "url": "#top"
   }
 ]

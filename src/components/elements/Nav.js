@@ -1,4 +1,4 @@
-import MenuMain from "./MainMenu/MenuMain";
+import MenuMain from "./MenuMain";
 import MenuMainExtras from "./MainMenu/MenuMainExtras";
 
 import { ReactComponent as Logo } from "../images/logo.svg";
