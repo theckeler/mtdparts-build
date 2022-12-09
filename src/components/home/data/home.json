@@ -29,6 +29,7 @@
       }
     ]
   },
+
   "howToGuides": {
     "h2": "How-To Guides",
     "blocks": [
@@ -70,6 +71,51 @@
         "button": {
           "copy": "Read More",
           "url": "https://www.mtdparts.com/en_US/knowledge-lawn-mower-wont-start.html"
+        }
+      }
+    ]
+  },
+
+  "supportLinks": {
+    "h2": "Support Quick Links",
+    "blocks": [
+      {
+        "icon": "iconLocator",
+        "iconAddClass": "max-w-120",
+        "title": "Service Locator",
+        "copy": "Coast-to-coast service. Find the location closest to you.",
+        "small": "",
+        "addClass": "",
+        "button": {
+          "copy": "Search",
+          "url": "#top",
+          "addClass": "bg-white"
+        }
+      },
+      {
+        "icon": "iconManual",
+        "iconAddClass": "max-w-160",
+        "title": "Manual Lookup",
+        "copy": "Find product manuals for MTD equipment.",
+        "small": "",
+        "addClass": "",
+        "button": {
+          "copy": "Search",
+          "url": "#top",
+          "addClass": "bg-white"
+        }
+      },
+      {
+        "icon": "iconKnowledgeCenter",
+        "iconAddClass": "max-w-160",
+        "title": "Knowledge Center",
+        "copy": "Help articles for Outdoor power equipment.",
+        "small": "",
+        "addClass": "border-bottom-0",
+        "button": {
+          "copy": "Search",
+          "url": "#top",
+          "addClass": "bg-white"
         }
       }
     ]

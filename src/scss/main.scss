@@ -3,24 +3,27 @@
 
 @import "./_functions.scss";
 
+$mtd-parts-green: #059353;
+$ada-green: #06653a;
+
 $bg-color: #262626;
 $body-color: #262626;
 $btn-border-radius: rem(4px);
-$link-color: #059353;
+$link-color: $ada-green;
 $nav-link-color: #262626;
 $transparent-color: transparent;
 $border-color: #d2d2d2;
 
 $theme-colors: (
-  "primary": #059353,
+  "primary": $ada-green,
   "secondary": #262626,
-  "success": #059353,
+  "success": $ada-green,
   "light": #e8e8e8,
   "dark": #d2d2d2,
 );
 
 $colors: (
-  "green": #059353,
+  "green": $ada-green,
 );
 
 $nav-tabs-border-color: #d3d3d3;
@@ -29,7 +32,7 @@ $nav-tabs-border-width: em(2);
 $nav-tabs-link-active-color: #262626;
 $nav-tabs-link-active-bg: #e0f4ed;
 $nav-tabs-link-active-border-color: $transparent-color $transparent-color
-  #059353;
+  $ada-green;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -47,6 +50,10 @@ $nav-tabs-link-active-border-color: $transparent-color $transparent-color
 
 .mh-0 {
   max-height: 0;
+}
+
+.border-footer {
+  border-bottom: 1px solid #4c4c4c;
 }
 
 $hamburgerColor: #e1e1e1;
@@ -100,9 +107,24 @@ $hamburgerColor: #e1e1e1;
 .max-h-48 {
   max-width: em(48);
 }
+
+.max-vh-100 {
+  max-height: 100vh;
+}
+
+.mh-0 {
+  max-height: 0;
+}
+
 svg {
   width: 100%;
   height: auto;
+
+  &.fill-white {
+    * {
+      fill: #fff;
+    }
+  }
 }
 
 body::-webkit-scrollbar {

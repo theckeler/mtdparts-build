@@ -1,12 +1,20 @@
+import Button from "../elements/Button";
+
 import { ReactComponent as iconShipping } from "../images/icon-shipping.svg";
 import { ReactComponent as iconReturns } from "../images/icon-returns.svg";
 import { ReactComponent as iconChat } from "../images/icon-chat.svg";
+import { ReactComponent as iconLocator } from "../images/icon-service-locator.svg";
+import { ReactComponent as iconManual } from "../images/icon-manual.svg";
+import { ReactComponent as iconKnowledgeCenter } from "../images/icon-knowledge-center.svg";
 
 const IconTitleBlock = ({ block }) => {
   const IconMap = {
     iconShipping: iconShipping,
     iconReturns: iconReturns,
     iconChat: iconChat,
+    iconLocator: iconLocator,
+    iconManual: iconManual,
+    iconKnowledgeCenter: iconKnowledgeCenter,
   };
   let IconName = IconMap[`${block.icon}`];
 
@@ -26,6 +34,15 @@ const IconTitleBlock = ({ block }) => {
         className="fs-8 mb-0"
         dangerouslySetInnerHTML={{ __html: block.small }}
       />
+      {block.button && (
+        <Button
+          copy={block.button.copy}
+          url={block.button.url}
+          addClass={block.button.addClass}
+          addLabel={block.title}
+          //addClick=""
+        />
+      )}
     </div>
   );
 };

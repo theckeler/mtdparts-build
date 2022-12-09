@@ -1,5 +1,5 @@
 import MenuMain from "./MenuMain";
-import MenuMainExtras from "./MainMenu/MenuMainExtras";
+import MenuMainExtras from "./MenuMain/MenuMainExtras";
 
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as IconEatHam } from "../images/hamburger.svg";
@@ -12,7 +12,7 @@ const Nav = ({ menuData }) => {
     e.preventDefault();
     const mainMenu = document.querySelector("#main-menu");
     mainMenu.classList.toggle("mh-0");
-    mainMenu.classList.toggle("overflow-scroll");
+    // mainMenu.classList.toggle("overflow-scroll");
     document
       .querySelector(".btn-hamburger")
       .setAttribute(
@@ -35,7 +35,7 @@ const Nav = ({ menuData }) => {
       aria-labelledby="main-menu-desc"
       aria-label="Main Nav"
       role="navigation"
-      id="nav"
+      id="nav-main"
     >
       <h2 id="main-menu-desc" className="visually-hidden">
         Main Menu
@@ -55,10 +55,10 @@ const Nav = ({ menuData }) => {
               className="btn btn-hamburger hamburger"
               aria-expanded="false"
             >
-              <span className="">
+              <span className="pe-none">
                 <IconEatHam />
               </span>
-              <span className="d-none">
+              <span className="pe-none d-none">
                 <IconEatHamClose />
               </span>
               <span className="visually-hidden">Toggle Navigation</span>

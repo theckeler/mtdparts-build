@@ -1,11 +1,8 @@
-const MenuLink = ({
-  link,
-  ariaCurrent,
-  hasSub,
-  IconArrowDown,
-  IconArrowUp,
-  disableClick,
-}) => {
+import { ReactComponent as IconArrowUp } from "../../images/arrow-up.svg";
+
+const MenuSub = ({ link, ariaCurrent }) => {
+  const hasSub = link.sub && { "aria-expanded": "true" };
+
   return (
     <ul
       className="d-flex flex-column list-unstyled bg-white mh-0 overflow-hidden subnav"
@@ -15,7 +12,7 @@ const MenuLink = ({
       {link.sub.map((subLink, i) => {
         return (
           <li
-            className="nav-item text-align-left w-100 mb-2"
+            className="nav-item text-align-left w-100"
             role="menuitem"
             key={i}
           >
@@ -23,13 +20,13 @@ const MenuLink = ({
               href={link.url}
               {...ariaCurrent}
               {...hasSub}
-              onClick={disableClick}
-              className="nav-link d-block w-100 py-1 d-block d-flex fs-7"
+              aria-expanded="true"
+              className="nav-link d-block w-100 py-2 d-block d-flex fs-7"
             >
               {subLink.title}
               {subLink.sub && (
                 <>
-                  <IconArrowDown className="max-w-25 ms-auto" />
+                  <IconArrowUp className="max-w-25 ms-auto" />
                 </>
               )}
             </a>
@@ -47,7 +44,6 @@ const MenuLink = ({
                     >
                       <a
                         href={link.url}
-                        onClick={disableClick}
                         className="nav-link d-block w-100 py-1 d-block d-flex fs-7"
                       >
                         {subLink.title}
@@ -64,4 +60,4 @@ const MenuLink = ({
   );
 };
 
-export default MenuLink;
+export default MenuSub;

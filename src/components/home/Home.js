@@ -1,4 +1,4 @@
-import MenuMainSearch from "../elements/MainMenu/MenuMainSearch";
+import MenuMainSearch from "../elements/MenuMain/MenuMainSearch";
 import Button from "../elements/Button";
 import IconTitleBlock from "../elements/IconTitleBlock";
 import ImgTitleBlock from "../elements/ImgTitleBlock";
@@ -185,6 +185,24 @@ const Home = () => {
               return (
                 <li className="col-12" key={i}>
                   <ImgTitleBlock {...{ block }} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      <section className="bg-light px-3 py-3 mt-3">
+        <div className="container-md g-0 d-flex flex-column">
+          <h2 className="text-uppercase text-center">
+            {homeData.supportLinks.h2}
+          </h2>
+          <p className="mb-0 fs-7 text-center">{homeData.supportLinks.copy}</p>
+          <ul className="d-flex flex-wrap list-unstyled p-2">
+            {homeData.supportLinks.blocks.map((block, i) => {
+              return (
+                <li className="col-12" key={i}>
+                  <IconTitleBlock {...{ block }} />
                 </li>
               );
             })}

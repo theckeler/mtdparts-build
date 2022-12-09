@@ -9,7 +9,7 @@ const Button = ({ copy, url, addClass, addClick, addLabel }) => {
       <a
         href={url}
         className={`${buttonCSS} ${addClass}`}
-        aria-label={`Read more about ${addLabel}`}
+        aria-label={`${copy} ${addLabel}`}
       >
         {copy} <IconPlayCircle className="max-w-20 ms-1" />
       </a>

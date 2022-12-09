@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./home/Home";
 import Nav from "./elements/Nav";
 import menuData from "./data/menu.json";
+import menuFooterData from "./data/menu-footer.json";
+import Footer from "./elements/Footer";
 
 const Index = () => {
   return (
@@ -16,7 +18,9 @@ const Index = () => {
           <Route index path="/" element={<Home />} />
         </Routes>
       </main>
-      <footer></footer>
+      <footer className="bg-secondary">
+        <Footer {...{ menuData, menuFooterData }} />
+      </footer>
     </>
   );
 };
