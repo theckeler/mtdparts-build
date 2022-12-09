@@ -1,7 +1,7 @@
-import { ReactComponent as IconCart } from "../../images/cart.svg";
-import { ReactComponent as IconAccount } from "../../images/account.svg";
+import { ReactComponent as IconCart } from "../../../images/cart.svg";
+import { ReactComponent as IconAccount } from "../../../images/account.svg";
 
-const MenuMainExtras = () => {
+const Extras = () => {
   return (
     <ul className="d-flex list-unstyled align-items-center">
       <li className="col-6 max-w-48 p-2 position-relative">
@@ -20,4 +20,4 @@ const MenuMainExtras = () => {
   );
 };
 
-export default MenuMainExtras;
+export default Extras;

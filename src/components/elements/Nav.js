@@ -1,5 +1,5 @@
 import MenuMain from "./MenuMain";
-import MenuMainExtras from "./MenuMain/Extras";
+import MenuMainExtras from "./Menu/Main/Extras";
 
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as IconEatHam } from "../images/hamburger.svg";
@@ -31,7 +31,7 @@ const Nav = ({ menuData }) => {
 
   return (
     <nav
-      className="bg-light"
+      className="bg-light box-shadow"
       aria-labelledby="main-menu-desc"
       aria-label="Main Nav"
       role="navigation"

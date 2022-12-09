@@ -127,6 +127,10 @@ svg {
   }
 }
 
+.box-shadow {
+  box-shadow: 0 0 rem(8) rgba(#000, 0.5);
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

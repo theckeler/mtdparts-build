@@ -1,5 +1,5 @@
 import MenuLoop from "./Menu/Loop";
-import MenuMainExtras from "./MenuMain/Extras";
+import MenuMainExtras from "./Menu/Main/Extras";
 import MenuMainSearch from "./Search";
 
 const Nav = ({ menuData }) => {
