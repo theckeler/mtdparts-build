@@ -1,4 +1,4 @@
-import { ReactComponent as IconSearch } from "../../images/search.svg";
+import { ReactComponent as IconSearch } from "../images/search.svg";
 
 const MenuMainSearch = ({ addClass }) => {
   const randID = Math.floor(Math.random() * 10000) + 1;
@@ -18,7 +18,7 @@ const MenuMainSearch = ({ addClass }) => {
         id={`search-${randID}`}
         aria-label="Search"
       >
-        <IconSearch />
+        <IconSearch class="fill-white" />
       </button>
     </div>
   );

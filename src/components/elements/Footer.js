@@ -1,5 +1,5 @@
-import MenuLink from "./Menu/Link";
 import MenuLoop from "./Menu/Loop";
+import Search from "../elements/Search";
 
 const Footer = ({ menuData, menuFooterData }) => {
   //console.log("menuData", menuData);
@@ -41,7 +41,12 @@ const Footer = ({ menuData, menuFooterData }) => {
           footerNav={true}
           addClass="text-white"
         />
-
+        <li
+          className="nav-item text-align-left w-100 d-flex fs-7 mt-2 px-2"
+          role="menuitem"
+        >
+          <Search />
+        </li>
         <li
           className="nav-item text-align-left w-100 d-flex fs-7 mt-4"
           role="menuitem"

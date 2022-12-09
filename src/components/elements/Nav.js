@@ -1,5 +1,5 @@
 import MenuMain from "./MenuMain";
-import MenuMainExtras from "./MenuMain/MenuMainExtras";
+import MenuMainExtras from "./MenuMain/Extras";
 
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as IconEatHam } from "../images/hamburger.svg";

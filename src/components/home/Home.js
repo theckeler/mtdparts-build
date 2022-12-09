@@ -1,4 +1,4 @@
-import MenuMainSearch from "../elements/MenuMain/MenuMainSearch";
+import MenuMainSearch from "../elements/Search";
 import Button from "../elements/Button";
 import IconTitleBlock from "../elements/IconTitleBlock";
 import ImgTitleBlock from "../elements/ImgTitleBlock";

@@ -36,7 +36,7 @@ const IconTitleBlock = ({ block }) => {
       />
       {block.button && (
         <Button
-          copy={block.button.copy}
+          copy={`${block.button.copy} ${block.title}`}
           url={block.button.url}
           addClass={block.button.addClass}
           addLabel={block.title}

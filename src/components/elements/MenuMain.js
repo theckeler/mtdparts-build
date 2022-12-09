@@ -1,6 +1,6 @@
 import MenuLoop from "./Menu/Loop";
-import MenuMainExtras from "./MenuMain/MenuMainExtras";
-import MenuMainSearch from "./MenuMain/MenuMainSearch";
+import MenuMainExtras from "./MenuMain/Extras";
+import MenuMainSearch from "./Search";
 
 const Nav = ({ menuData }) => {
   return (

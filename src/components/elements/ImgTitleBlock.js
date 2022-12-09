@@ -15,10 +15,10 @@ const ImgTitleBlock = ({ block }) => {
       />
       {block.button && (
         <Button
-          copy={block.button.copy}
+          copy={`${block.button.copy} ${block.title}`}
           url={block.button.url}
           addClass="bg-white border border-secondary"
-          addLabel={block.title}
+          //addLabel={block.title}
           //addClick=""
         />
       )}
