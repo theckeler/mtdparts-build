@@ -2,14 +2,11 @@ import MenuLoop from "./Menu/Loop";
 import Search from "../elements/Search";
 
 const Footer = ({ menuData, menuFooterData }) => {
-  //console.log("menuData", menuData);
-
   const combinedData = menuData.concat(menuFooterData);
-  // console.log("combinedData", combinedData);
 
   return (
     <nav
-      className="px-3 py-2 container-md"
+      className="px-3 py-2 container-lg"
       aria-labelledby="footer-menu-desc"
       aria-label="Footer Nav"
       role="navigation"

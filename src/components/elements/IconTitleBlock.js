@@ -7,7 +7,7 @@ import { ReactComponent as iconLocator } from "../images/icon-service-locator.sv
 import { ReactComponent as iconManual } from "../images/icon-manual.svg";
 import { ReactComponent as iconKnowledgeCenter } from "../images/icon-knowledge-center.svg";
 
-const IconTitleBlock = ({ block }) => {
+const IconTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
   const IconMap = {
     iconShipping: iconShipping,
     iconReturns: iconReturns,
@@ -18,14 +18,23 @@ const IconTitleBlock = ({ block }) => {
   };
   let IconName = IconMap[`${block.icon}`];
 
+  //console.log("blockLength", blockLength);
+  //console.log("curCount", curCount);
+  if (curCount === blockLength - 1) {
+    block.addClass += ` border-bottom-0 border-${colBreak}-right-0`;
+  }
+
   return (
     <div
-      className={`d-flex flex-column align-items-center p-3 border-bottom ${block.addClass}`}
+      className={`d-flex flex-column align-items-center p-4 my-4 border-bottom border-${colBreak}-bottom-0 border-${colBreak}-right h-100 ${block.addClass}`}
     >
-      <div className={`w-100 mb-3 ${block.iconAddClass}`}>
-        <IconName />
+      <div
+        className={`w-100 mb-3 ${block.iconAddClass}`}
+        style={{ maxHeight: "120px" }}
+      >
+        <IconName style={{ height: "100%" }} />
       </div>
-      <h3 className="mb-3">{block.title}</h3>
+      <h3 className="mb-3 text-center">{block.title}</h3>
       <p
         className="fs-7 mb-3 text-center"
         dangerouslySetInnerHTML={{ __html: block.copy }}
@@ -38,9 +47,8 @@ const IconTitleBlock = ({ block }) => {
         <Button
           copy={`${block.button.copy} ${block.title}`}
           url={block.button.url}
-          addClass={block.button.addClass}
+          addClass={`mt-auto  ${block.button.addClass}`}
           addLabel={block.title}
-          //addClick=""
         />
       )}
     </div>

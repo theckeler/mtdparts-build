@@ -18,7 +18,7 @@ const MenuMainSearch = ({ addClass }) => {
         id={`search-${randID}`}
         aria-label="Search"
       >
-        <IconSearch class="fill-white" />
+        <IconSearch className="fill-white" />
       </button>
     </div>
   );

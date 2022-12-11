@@ -5,14 +5,10 @@ import MenuMainSearch from "./Search";
 const Nav = ({ menuData }) => {
   return (
     <div
-      className="overflow-scroll remove-scrollbar max-vh-100 mh-0 min-w-100 max-vh-100"
+      className="overflow-scroll remove-scrollbar min-vh-100 mh-0 min-w-100 max-vh-100 min-vh-0"
       id="main-menu"
     >
-      <ul
-        className="min-vh-100 nav list-unstyled flex-column pb-5"
-        aria-label="Main Menu"
-        role="menu"
-      >
+      <ul className="list-unstyled pb-5" aria-label="Main Menu" role="menu">
         <MenuLoop menuData={menuData} footerNav={false} addClass="text-black" />
 
         <li

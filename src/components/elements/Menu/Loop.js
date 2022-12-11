@@ -1,17 +1,6 @@
 import MenuLink from "./Link";
 
 const Loop = ({ menuData, footerNav, addClass }) => {
-  // const openSubMenu = (e) => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-
-  //   console.log("click", e);
-
-  //   const subNav = e.target.parentNode.querySelector("ul");
-  //   subNav.classList.toggle("overflow-hidden");
-  //   subNav.classList.toggle("mh-0");
-  // };
-
   return (
     <>
       {menuData.map((link, i) => {

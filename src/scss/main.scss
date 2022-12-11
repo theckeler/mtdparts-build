@@ -36,6 +36,61 @@ $nav-tabs-link-active-border-color: $transparent-color $transparent-color
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {
+      border-top: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-right {
+      border-right: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-bottom {
+      border-bottom: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-left {
+      border-left: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-top-0 {
+      border-top: 0 !important;
+    }
+    .border#{$infix}-right-0 {
+      border-right: 0 !important;
+    }
+    .border#{$infix}-bottom-0 {
+      border-bottom: 0 !important;
+    }
+    .border#{$infix}-left-0 {
+      border-left: 0 !important;
+    }
+
+    .border#{$infix}-x {
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-y {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+    }
+    // support of .border-sm (-md, -lg, -xl)
+    .border#{$infix} {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-0 {
+      border-top: 0 !important;
+      border-bottom: 0 !important;
+      border-left: 0 !important;
+      border-right: 0 !important;
+    }
+  }
+}
+
 .fs-7 {
   font-size: ($font-size-base * 0.85);
 }
@@ -116,6 +171,10 @@ $hamburgerColor: #e1e1e1;
   max-height: 0;
 }
 
+.min-vh-0 {
+  min-height: 0 !important;
+}
+
 svg {
   width: 100%;
   height: auto;
@@ -141,5 +200,8 @@ body::-webkit-scrollbar {
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
+  .w-md-75 {
+    max-width: 75%;
+  }
 }

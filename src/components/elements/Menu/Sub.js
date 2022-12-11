@@ -21,7 +21,7 @@ const MenuSub = ({ link, ariaCurrent }) => {
               {...ariaCurrent}
               {...hasSub}
               aria-expanded="true"
-              className="nav-link d-block w-100 py-2 d-block d-flex fs-7"
+              className="nav-link d-block w-100 py-2 px-3 d-block d-flex fs-7"
             >
               {subLink.title}
               {subLink.sub && (
@@ -44,7 +44,7 @@ const MenuSub = ({ link, ariaCurrent }) => {
                     >
                       <a
                         href={link.url}
-                        className="nav-link d-block w-100 py-1 d-block d-flex fs-7"
+                        className="nav-link d-block w-100 py-2 px-3 d-block d-flex fs-7"
                       >
                         {subLink.title}
                       </a>

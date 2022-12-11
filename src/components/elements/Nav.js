@@ -6,13 +6,11 @@ import { ReactComponent as IconEatHam } from "../images/hamburger.svg";
 import { ReactComponent as IconEatHamClose } from "../images/hamburger-close.svg";
 
 const Nav = ({ menuData }) => {
-  //console.log("menuData", menuData);
-
   const openMenu = (e) => {
     e.preventDefault();
     const mainMenu = document.querySelector("#main-menu");
     mainMenu.classList.toggle("mh-0");
-    // mainMenu.classList.toggle("overflow-scroll");
+    mainMenu.classList.toggle("min-vh-0");
     document
       .querySelector(".btn-hamburger")
       .setAttribute(
@@ -31,7 +29,7 @@ const Nav = ({ menuData }) => {
 
   return (
     <nav
-      className="bg-light box-shadow"
+      className="bg-light box-shadow "
       aria-labelledby="main-menu-desc"
       aria-label="Main Nav"
       role="navigation"
@@ -40,8 +38,8 @@ const Nav = ({ menuData }) => {
       <h2 id="main-menu-desc" className="visually-hidden">
         Main Menu
       </h2>
-      <div className="container-md">
-        <ul className="d-flex list-unstyled align-items-center py-2 px-2 mb-0">
+      <div className="container-lg">
+        <ul className="d-flex list-unstyled align-items-center py-2 px-1 mb-0">
           <li className="main-menu-button max-w-48" id="main-menu-button">
             <button
               aria-haspopup="true"

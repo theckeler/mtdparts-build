@@ -28,7 +28,6 @@ const MenuLink = ({ link, ariaCurrent, addClass, footerNav }) => {
     e.stopPropagation();
     e.preventDefault();
     const subNav = e.target.parentNode.querySelector("ul");
-    //subNav.classList.toggle("overflow-hidden");
     subNav.classList.toggle("mh-0");
   };
 
