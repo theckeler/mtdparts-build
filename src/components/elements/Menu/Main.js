@@ -21,7 +21,7 @@ const Nav = ({ menuData }) => {
           className="nav-item text-align-left w-100 pb-5 px-3"
           role="menuitem"
         >
-          <MenuMainSearch />
+          <MenuMainSearch darkTheme={true} />
         </li>
       </ul>
     </div>

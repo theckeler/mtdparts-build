@@ -190,6 +190,12 @@ svg {
       fill: #fff;
     }
   }
+
+  &.fill-black {
+    * {
+      fill: #000;
+    }
+  }
 }
 
 .box-shadow {

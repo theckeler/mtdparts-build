@@ -6,7 +6,7 @@ const Footer = ({ menuData, menuFooterData }) => {
 
   return (
     <nav
-      className="px-3 py-2 container"
+      className="px-3 py-2 container-lg"
       aria-labelledby="footer-menu-desc"
       aria-label="Footer Nav"
       role="navigation"
@@ -38,7 +38,7 @@ const Footer = ({ menuData, menuFooterData }) => {
         role="menu"
       >
         <li
-          className="col-6 nav-item text-align-left fs-7 mt-2 px-2"
+          className="col-lg-6 nav-item text-align-left fs-7 mt-2 px-2"
           role="menuitem"
         >
           <Search />
@@ -48,18 +48,18 @@ const Footer = ({ menuData, menuFooterData }) => {
           className="nav-item text-align-left w-100 fs-7 mt-4"
           role="menuitem"
         >
-          <ul className="list-unstyled d-flex">
-            <li>
+          <ul className="list-unstyled d-flex flex-column flex-md-row">
+            <li className="col-12 col-md-4">
               <a href="#top" className="col nav-link text-white">
                 Site Directory
               </a>
             </li>
-            <li>
+            <li className="col-12 col-md-4">
               <a href="#top" className="col nav-link  text-white">
                 Shipping & Returns
               </a>
             </li>
-            <li>
+            <li className="col-12 col-md-4">
               <a href="#top" className="col nav-link  text-white">
                 Privacy Policy
               </a>
@@ -71,23 +71,23 @@ const Footer = ({ menuData, menuFooterData }) => {
           role="menuitem"
         >
           <p className="d-block w-100 text-white px-3 mb-1">Our Other Sites:</p>
-          <ul className="list-unstyled d-flex">
-            <li>
+          <ul className="list-unstyled d-flex flex-column flex-md-row">
+            <li className="col-12 col-md-3">
               <a href="#top" className="nav-link text-white">
                 Cub Cadet
               </a>
             </li>
-            <li>
+            <li className="col-12 col-md-3">
               <a href="#top" className="nav-link text-white">
                 Troy-Bilt
               </a>
             </li>
-            <li>
+            <li className="col-12 col-md-3">
               <a href="#top" className="nav-link text-white">
                 Remington
               </a>
             </li>
-            <li>
+            <li className="col-12 col-md-3">
               <a href="#top" className="nav-link text-white">
                 MTD Products Inc.
               </a>
