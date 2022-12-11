@@ -1,11 +1,11 @@
-import Button from "../elements/Button";
+import Button from "../Button";
 
-import { ReactComponent as iconShipping } from "../images/icon-shipping.svg";
-import { ReactComponent as iconReturns } from "../images/icon-returns.svg";
-import { ReactComponent as iconChat } from "../images/icon-chat.svg";
-import { ReactComponent as iconLocator } from "../images/icon-service-locator.svg";
-import { ReactComponent as iconManual } from "../images/icon-manual.svg";
-import { ReactComponent as iconKnowledgeCenter } from "../images/icon-knowledge-center.svg";
+import { ReactComponent as iconShipping } from "../../images/icon-shipping.svg";
+import { ReactComponent as iconReturns } from "../../images/icon-returns.svg";
+import { ReactComponent as iconChat } from "../../images/icon-chat.svg";
+import { ReactComponent as iconLocator } from "../../images/icon-service-locator.svg";
+import { ReactComponent as iconManual } from "../../images/icon-manual.svg";
+import { ReactComponent as iconKnowledgeCenter } from "../../images/icon-knowledge-center.svg";
 
 const IconTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
   const IconMap = {

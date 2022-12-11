@@ -1,7 +1,7 @@
 import MenuMainSearch from "../elements/Search";
 import Button from "../elements/Button";
-import IconTitleBlock from "../elements/IconTitleBlock";
-import ImgTitleBlock from "../elements/ImgTitleBlock";
+import IconTitleBlock from "../elements/Blocks/IconTitle";
+import ImgTitleBlock from "../elements/Blocks/ImgTitle";
 
 import { ReactComponent as IconArrowUp } from "../images/arrow-up.svg";
 import { ReactComponent as logoYardMan } from "../images/logo-yard-man.svg";

@@ -1,11 +1,6 @@
-import Button from "../elements/Button";
+import Button from "../Button";
 
 const ImgTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
-  // if (curCount === blockLength - 1) {
-  //   block.addClass += ` border-${colBreak}-right-0`;
-  //   console.log("block.addClass", block.addClass);
-  // }
-
   return (
     <div
       className={`d-flex flex-column align-items-center p-lg-2 p-1 my-4 h-100 ${block.addClass}`}
@@ -20,7 +15,8 @@ const ImgTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
       />
       {block.button && (
         <Button
-          copy={`${block.button.copy} ${block.title}`}
+          copy={`${block.button.copy}`}
+          copyHidden={`${block.title}`}
           url={block.button.url}
           addClass="bg-white border border-secondary mt-auto fs-7"
         />

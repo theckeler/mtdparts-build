@@ -1,6 +1,14 @@
 import { ReactComponent as IconPlayCircle } from "../images/play-circle.svg";
 
-const Button = ({ copy, url, addClass, addClick, addLabel, darkTheme }) => {
+const Button = ({
+  copy,
+  copyHidden,
+  url,
+  addClass,
+  addClick,
+  addLabel,
+  darkTheme,
+}) => {
   const buttonCSS =
     "btn w-100 p-2 d-flex align-items-center mb-2 justify-content-center";
   let svgCSS = "max-w-20 ms-1";
@@ -12,7 +20,8 @@ const Button = ({ copy, url, addClass, addClick, addLabel, darkTheme }) => {
   if (url) {
     return (
       <a href={url} className={`${buttonCSS} ${addClass}`}>
-        {copy} <IconPlayCircle className={svgCSS} />
+        {copy} <span className="visually-hidden">{copyHidden}</span>{" "}
+        <IconPlayCircle className={svgCSS} />
       </a>
     );
   } else {
