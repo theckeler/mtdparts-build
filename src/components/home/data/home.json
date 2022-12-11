@@ -76,6 +76,22 @@
     ]
   },
 
+  "tabs": {
+    "h2": "Shop By...",
+    "blocks": [
+      {
+        "title": "Brand",
+        "active": true
+      },
+      {
+        "title": "Part Type"
+      },
+      {
+        "title": "Machine Type"
+      }
+    ]
+  },
+
   "supportLinks": {
     "h2": "Support Quick Links",
     "blocks": [

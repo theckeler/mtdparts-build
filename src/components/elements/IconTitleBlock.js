@@ -26,15 +26,15 @@ const IconTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
 
   return (
     <div
-      className={`d-flex flex-column align-items-center p-4 my-4 border-bottom border-${colBreak}-bottom-0 border-${colBreak}-right h-100 ${block.addClass}`}
+      className={`d-flex flex-column align-items-center p-4 border-bottom border-${colBreak}-bottom-0 border-${colBreak}-right h-100 ${block.addClass}`}
     >
       <div
-        className={`w-100 mb-3 ${block.iconAddClass}`}
-        style={{ maxHeight: "120px" }}
+        className={`d-flex align-items-center w-100 mb-3 ${block.iconAddClass}`}
+        style={{ height: "120px" }}
       >
         <IconName style={{ height: "100%" }} />
       </div>
-      <h3 className="mb-3 text-center">{block.title}</h3>
+      <h3 className="mb-3 text-center h5">{block.title}</h3>
       <p
         className="fs-7 mb-3 text-center"
         dangerouslySetInnerHTML={{ __html: block.copy }}

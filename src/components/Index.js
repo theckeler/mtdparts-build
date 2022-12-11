@@ -18,7 +18,7 @@ const Index = () => {
           <Route index path="/" element={<Home />} />
         </Routes>
       </main>
-      <footer className="bg-secondary">
+      <footer className="bg-secondary pb-5">
         <Footer {...{ menuData, menuFooterData }} />
       </footer>
     </>

@@ -2,11 +2,11 @@ import MenuLoop from "./Menu/Loop";
 import Search from "../elements/Search";
 
 const Footer = ({ menuData, menuFooterData }) => {
-  const combinedData = menuData.concat(menuFooterData);
+  //const combinedData = menuData.concat(menuFooterData);
 
   return (
     <nav
-      className="px-3 py-2 container-lg"
+      className="px-3 py-2 container"
       aria-labelledby="footer-menu-desc"
       aria-label="Footer Nav"
       role="navigation"
@@ -17,7 +17,7 @@ const Footer = ({ menuData, menuFooterData }) => {
       </h2>
 
       <ul
-        className="viewport-width navbar-collapse nav list-unstyled flex-column pb-5"
+        className="viewport-width navbar-collapse nav list-unstyled flex-column"
         aria-label="Main Menu"
         role="menu"
       >
@@ -33,17 +33,43 @@ const Footer = ({ menuData, menuFooterData }) => {
           </a>
         </li>
 
-        <MenuLoop
-          menuData={combinedData}
-          footerNav={true}
-          addClass="text-white"
-        />
+        <li
+          className="nav-item text-align-left w-100 border-footer"
+          role="menuitem"
+        >
+          <ul className="viewport-width nav list-unstyled flex-column flex-lg-row">
+            <li className="col-lg-6">
+              <div className="pe-lg-2">
+                <ul className="nav list-unstyled flex-column">
+                  <MenuLoop
+                    menuData={menuData}
+                    footerNav={true}
+                    addClass="text-white"
+                  />
+                </ul>
+              </div>
+            </li>
+            <li className="col-lg-6">
+              <div className="ps-lg-2">
+                <ul className="nav list-unstyled flex-column">
+                  <MenuLoop
+                    menuData={menuFooterData}
+                    footerNav={true}
+                    addClass="text-white"
+                  />
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+
         <li
           className="nav-item text-align-left w-100 d-flex fs-7 mt-2 px-2"
           role="menuitem"
         >
           <Search />
         </li>
+
         <li
           className="nav-item text-align-left w-100 d-flex fs-7 mt-4"
           role="menuitem"
