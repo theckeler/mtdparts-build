@@ -1,5 +1,5 @@
-import MenuMain from "./MenuMain";
-import MenuMainExtras from "./Menu/Main/Extras";
+import MenuMain from "./Menu/Main";
+import MenuMainExtras from "./Menu/Extras";
 
 import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as IconEatHam } from "../images/hamburger.svg";
@@ -9,6 +9,7 @@ const Nav = ({ menuData }) => {
   const openMenu = (e) => {
     e.preventDefault();
     const mainMenu = document.querySelector("#main-menu");
+    mainMenu.classList.toggle("active");
     mainMenu.classList.toggle("mh-0");
     mainMenu.classList.toggle("min-vh-0");
     document
@@ -25,6 +26,11 @@ const Nav = ({ menuData }) => {
       e.classList.toggle("d-none");
     });
     document.querySelector("body").classList.toggle("overflow-hidden");
+    document
+      .querySelectorAll("header .has-submenu .subnav")
+      .forEach(function (e) {
+        e.classList.add("mh-0");
+      });
   };
 
   return (
@@ -53,10 +59,10 @@ const Nav = ({ menuData }) => {
               className="btn btn-hamburger hamburger"
               aria-expanded="false"
             >
-              <span className="pe-none">
+              <span className="button-ham pe-none">
                 <IconEatHam />
               </span>
-              <span className="pe-none d-none">
+              <span className="button-x pe-none d-none">
                 <IconEatHamClose />
               </span>
               <span className="visually-hidden">Toggle Navigation</span>

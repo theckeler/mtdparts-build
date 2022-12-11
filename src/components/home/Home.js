@@ -3,9 +3,7 @@ import Button from "../elements/Button";
 import IconTitleBlock from "../elements/IconTitleBlock";
 import ImgTitleBlock from "../elements/ImgTitleBlock";
 
-import { ReactComponent as IconArrowDown } from "../images/arrow-down.svg";
 import { ReactComponent as IconArrowUp } from "../images/arrow-up.svg";
-
 import { ReactComponent as logoYardMan } from "../images/logo-yard-man.svg";
 import { ReactComponent as logoRemington } from "../images/logo-remington.svg";
 import { ReactComponent as logoWhiteOutdoor } from "../images/logo-white.svg";
@@ -30,15 +28,13 @@ const Home = () => {
     logoRobomow: logoRobomow,
   };
 
-  const tabs = [{}];
-
   return (
     <>
       <h1 className="visually-hidden">MTD Parts</h1>
 
       {/* Small text block */}
       <section className="bg-secondary py-1">
-        <div className="container">
+        <div className="container-lg">
           <p className="text-white text-center text-uppercase fs-7 mb-0">
             Free Shipping on Parts Orders Over $45
           </p>
@@ -52,7 +48,7 @@ const Home = () => {
             "linear-gradient(to right, rgb(6,101,58) 50%, #262626 50%)",
         }}
       >
-        <div className="container g-0 d-flex flex-wrap">
+        <div className="container-lg g-0 d-flex flex-wrap">
           <div className="col-12 col-md-6 bg-primary text-white p-4 py-md-4 px-md-3">
             <h2 className="fs-4 text-center text-uppercase">Part Finder</h2>
             <p className="fs-7 text-center w-md-75 mx-auto">
@@ -78,11 +74,11 @@ const Home = () => {
 
       {/* SHOP BY */}
       <section>
-        <div className="container g-0 d-flex flex-column py-3">
+        <div className="container-lg g-0 d-flex flex-column py-3">
           <h2 className="text-uppercase text-center">{homeData.tabs.h2}</h2>
         </div>
 
-        <div className="container g-0 d-flex flex-column">
+        <div className="container-lg g-0 d-flex flex-column">
           <ul className="nav nav-tabs">
             {homeData.tabs.blocks.map((block, i) => {
               return (
@@ -238,7 +234,7 @@ const Home = () => {
 
       {/* SHOP WITH CONFIDENCE */}
       <section className="bg-light px-3 py-5 mt-3">
-        <div className="container g-0 d-flex flex-column">
+        <div className="container-lg g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">{homeData.shop.h2}</h2>
           <p className="mb-0 fs-7 text-center">{homeData.shop.copy}</p>
           <ul className="d-flex flex-wrap list-unstyled p-2 mt-4 mb-0">
@@ -264,8 +260,7 @@ const Home = () => {
 
       {/* How to guides */}
       <section className="px-3 py-3 mt-3">
-        {/* <div className="container-lg g-0 d-flex flex-column"> */}
-        <div className="container g-0 d-flex flex-column">
+        <div className="container-lg g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">
             {homeData.howToGuides.h2}
           </h2>
@@ -293,7 +288,7 @@ const Home = () => {
 
       {/* support links */}
       <section className="bg-light px-3 py-5 mt-3">
-        <div className="container g-0 d-flex flex-column">
+        <div className="container-lg g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">
             {homeData.supportLinks.h2}
           </h2>

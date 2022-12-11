@@ -1,5 +1,5 @@
-import { ReactComponent as IconCart } from "../../../images/cart.svg";
-import { ReactComponent as IconAccount } from "../../../images/account.svg";
+import { ReactComponent as IconCart } from "../../images/cart.svg";
+import { ReactComponent as IconAccount } from "../../images/account.svg";
 
 const Extras = () => {
   return (

@@ -22,13 +22,19 @@ const MenuLink = ({ link, ariaCurrent, addClass, footerNav }) => {
     svgFill = "fill-black";
   }
 
-  const hasAria = link.sub && { "aria-expanded": "false" };
+  //const hasAria = link.sub && { "aria-expanded": "false" };
 
   const openSubMenu = (e) => {
     e.stopPropagation();
     e.preventDefault();
+    e.target.classList.toggle("active");
+    e.target.setAttribute(
+      "aria-expanded",
+      `${!(e.target.getAttribute("aria-expanded") === "true")}`
+    );
     const subNav = e.target.parentNode.querySelector("ul");
     subNav.classList.toggle("mh-0");
+    subNav.classList.toggle("active");
   };
 
   return (
@@ -37,7 +43,7 @@ const MenuLink = ({ link, ariaCurrent, addClass, footerNav }) => {
         <>
           <button
             {...ariaCurrent}
-            {...hasAria}
+            aria-expanded="false"
             className={`nav-link d-block w-100 py-3 d-flex btn-link border-0 bg-transparent ${addClass}`}
             onClick={openSubMenu}
           >
