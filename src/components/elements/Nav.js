@@ -41,7 +41,7 @@ const Nav = ({ menuData }) => {
       role="navigation"
       id="nav-main"
     >
-      <div className="container-lg">
+      <div className="container-xxl">
         <ul className="d-flex list-unstyled align-items-center py-2 px-1 mb-0">
           <li className="main-menu-button max-w-48" id="main-menu-button">
             <button

@@ -64,7 +64,7 @@ const Home = () => {
 
       {/* Small text block */}
       <section className="bg-black py-1">
-        <div className="container-lg">
+        <div className="container-xxl">
           <p className="text-white text-center text-uppercase fs-7 mb-0">
             Free Shipping on Parts Orders Over $45
           </p>
@@ -73,7 +73,7 @@ const Home = () => {
 
       {/* Parts finder/diagrams */}
       <section className="bg-secondary">
-        <div className="container-lg g-0 d-flex flex-wrap">
+        <div className="container-xxl g-0 d-flex flex-wrap">
           <div className="col-12 col-md-6 bg-primary text-white p-4 py-md-4 px-md-3">
             <h2 className="fs-4 text-center text-uppercase">Part Finder</h2>
             <p className="fs-8 text-center w-md-75 mx-auto">
@@ -110,7 +110,7 @@ const Home = () => {
 
       {/* More info */}
       <section className="bg-light px-3 py-2 d-none d-md-block" id="more-info">
-        <div className="container-lg g-0 d-flex flex-column">
+        <div className="container-xxl g-0 d-flex flex-column">
           <ul className="d-flex flex-column flex-md-row list-unstyled mb-0">
             <li className="col-12 col-md-6 col-xl-3 p-3">
               <div className="d-flex justify-content-center align-items-center h-100">
@@ -147,11 +147,11 @@ const Home = () => {
 
       {/* SHOP BY */}
       <section>
-        <div className="container-lg g-0 d-flex flex-column py-3">
+        <div className="container-xxl g-0 d-flex flex-column py-3">
           <h2 className="text-uppercase text-center">{homeData.tabs.h2}</h2>
         </div>
 
-        <div className="container-lg g-0 d-flex flex-column">
+        <div className="container-xxl g-0 d-flex flex-column">
           <ul className="nav nav-tabs">
             {homeData.tabs.blocks.map((block, i) => {
               return (
@@ -300,7 +300,7 @@ const Home = () => {
 
       {/* SHOP WITH CONFIDENCE */}
       <section className="bg-light px-3 py-5 mt-3">
-        <div className="container-lg g-0 d-flex flex-column">
+        <div className="container-xxl g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">{homeData.shop.h2}</h2>
           <p className="mb-0 fs-7 text-center">{homeData.shop.copy}</p>
           <ul className="d-flex flex-wrap list-unstyled p-2 mt-4 mb-0">
@@ -326,7 +326,7 @@ const Home = () => {
 
       {/* How to guides */}
       <section className="px-3 py-3 mt-3">
-        <div className="container-lg g-0 d-flex flex-column">
+        <div className="container-xxl g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">
             {homeData.howToGuides.h2}
           </h2>
@@ -354,7 +354,7 @@ const Home = () => {
 
       {/* support links */}
       <section className="bg-light px-3 py-5 mt-3">
-        <div className="container-lg g-0 d-flex flex-column">
+        <div className="container-xxl g-0 d-flex flex-column">
           <h2 className="text-uppercase text-center">
             {homeData.supportLinks.h2}
           </h2>

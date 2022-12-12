@@ -6,7 +6,7 @@ const Footer = ({ menuData, menuFooterData }) => {
 
   return (
     <nav
-      className="px-3 py-2 container-lg"
+      className="px-3 py-2 container-xxl"
       aria-labelledby="footer-menu-desc"
       aria-label="Footer Menu"
       //role="navigation"
