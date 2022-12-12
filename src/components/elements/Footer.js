@@ -38,17 +38,17 @@ const Footer = ({ menuData, menuFooterData }) => {
         </li>
         <li className="nav-item text-align-left w-100 fs-7 mt-4">
           <ul className="list-unstyled d-flex flex-column flex-md-row">
-            <li className="col-12 col-md-4">
+            <li className="">
               <a href="#top" className="col nav-link text-white">
                 Site Directory
               </a>
             </li>
-            <li className="col-12 col-md-4">
+            <li className="">
               <a href="#top" className="col nav-link  text-white">
                 Shipping & Returns
               </a>
             </li>
-            <li className="col-12 col-md-4">
+            <li className="">
               <a href="#top" className="col nav-link  text-white">
                 Privacy Policy
               </a>
@@ -60,23 +60,23 @@ const Footer = ({ menuData, menuFooterData }) => {
           //role="menuitem"
         >
           <p className="d-block w-100 text-white px-3 mb-1">Our Other Sites:</p>
-          <ul className="list-unstyled d-flex flex-column flex-md-row">
-            <li className="col-12 col-md-3">
+          <ul className="list-unstyled d-flex flex-column flex-md-row justify-content-start">
+            <li className="">
               <a href="#top" className="nav-link text-white">
                 Cub Cadet
               </a>
             </li>
-            <li className="col-12 col-md-3">
+            <li className="">
               <a href="#top" className="nav-link text-white">
                 Troy-Bilt
               </a>
             </li>
-            <li className="col-12 col-md-3">
+            <li className="">
               <a href="#top" className="nav-link text-white">
                 Remington
               </a>
             </li>
-            <li className="col-12 col-md-3">
+            <li className="">
               <a href="#top" className="nav-link text-white">
                 MTD Products Inc.
               </a>
