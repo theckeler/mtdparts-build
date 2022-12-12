@@ -169,6 +169,10 @@ $hamburgerColor: #e1e1e1;
   max-width: em(48);
 }
 
+.min-h-48 {
+  min-height: em(48);
+}
+
 .max-vh-100 {
   max-height: 100vh;
 }

@@ -4,7 +4,7 @@ const MenuMainSearch = ({ addClass, darkTheme }) => {
   const randID = Math.floor(Math.random() * 10000) + 1;
 
   return (
-    <div className={`input-group mt-3 ${addClass}`}>
+    <div className={`input-group mt-3 min-h-48 ${addClass}`}>
       <input
         type="text"
         className="form-control border"

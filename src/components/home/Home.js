@@ -81,7 +81,11 @@ const Home = () => {
             <p className="fs-8 text-center w-md-75 mx-auto">
               Browse illustrated parts diagrams to find the part you need.
             </p>
-            <Button copy="Search Diagrams" url="#top" addClass="bg-white" />
+            <Button
+              copy="Search Diagrams"
+              url="#top"
+              addClass="bg-white min-h-48"
+            />
             <p className="fs-8 text-center mb-0 mt-2">
               For equipment 1995-present
             </p>
@@ -118,7 +122,7 @@ const Home = () => {
                 <Button
                   copy="Need More Help?"
                   url="#top"
-                  addClass="bg-white border mt-4 d-md-inline-flex w-auto px-4"
+                  addClass="bg-white border mt-4 d-md-inline-flex w-auto px-4 min-h-48"
                 />
               </div>
             </li>
