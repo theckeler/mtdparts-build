@@ -11,8 +11,6 @@ const MenuSub = ({ link, ariaCurrent }) => {
           <li className="nav-item text-align-left w-100" key={i}>
             <a
               href={link.url}
-              {...ariaCurrent}
-              aria-expanded="true"
               className="nav-link d-block w-100 py-2 px-3 d-block d-flex fs-7"
             >
               {subLink.title}
