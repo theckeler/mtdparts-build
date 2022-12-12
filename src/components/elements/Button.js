@@ -10,7 +10,7 @@ const Button = ({
   darkTheme,
 }) => {
   const buttonCSS =
-    "btn w-100 p-2 d-flex align-items-center justify-content-center";
+    "btn w-100 p-2 d-flex align-items-center justify-content-center min-h-48";
   let svgCSS = "max-w-20 ms-1";
 
   if (darkTheme) {
