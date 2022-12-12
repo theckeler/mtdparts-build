@@ -1,8 +1,6 @@
 import { ReactComponent as IconArrowUp } from "../../images/arrow-up.svg";
 
 const MenuSub = ({ link, ariaCurrent }) => {
-  const hasSub = link.sub && { "aria-expanded": "true" };
-
   return (
     <ul
       className="d-flex flex-column list-unstyled bg-white mh-0 overflow-hidden subnav"

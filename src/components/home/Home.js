@@ -4,6 +4,7 @@ import IconTitleBlock from "../elements/Blocks/IconTitle";
 import ImgTitleBlock from "../elements/Blocks/ImgTitle";
 
 import { ReactComponent as IconArrowUp } from "../images/arrow-up.svg";
+import { ReactComponent as IconArrowDown } from "../images/arrow-down.svg";
 import { ReactComponent as logoYardMan } from "../images/logo-yard-man.svg";
 import { ReactComponent as logoRemington } from "../images/logo-remington.svg";
 import { ReactComponent as logoWhiteOutdoor } from "../images/logo-white.svg";
@@ -32,10 +33,24 @@ const Home = () => {
     document.querySelectorAll(".tabs .tab").forEach(function (e) {
       e.classList.add("d-none");
     });
+
+    document.querySelectorAll(".arrow-up").forEach(function (e) {
+      e.classList.remove("d-block");
+      e.classList.add("d-none");
+    });
+    document.querySelectorAll(".arrow-down").forEach(function (e) {
+      e.classList.remove("d-none");
+      e.classList.add("d-block");
+    });
     document.querySelectorAll(".nav-tabs button").forEach(function (e) {
       e.classList.remove("active");
     });
     e.target.classList.add("active");
+    e.target.querySelector(".arrow-up").classList.remove("d-none");
+    e.target.querySelector(".arrow-up").classList.add("d-block");
+    e.target.querySelector(".arrow-down").classList.remove("d-block");
+    e.target.querySelector(".arrow-down").classList.add("d-none");
+
     document.querySelector(`#tab-${e.target.id}`).classList.remove("d-none");
   };
 
@@ -150,7 +165,22 @@ const Home = () => {
                     onClick={changeTab}
                     id={block.title.toLowerCase().replace(/\s/g, "-")}
                   >
-                    <IconArrowUp className="pe-none max-w-25" />
+                    <div className="tab-arrows pe-none max-w-25">
+                      <span
+                        className={`arrow-up ${
+                          block.active ? "d-block" : "d-none"
+                        }`}
+                      >
+                        <IconArrowUp aria-disabled="true" className="" />
+                      </span>
+                      <span
+                        className={`arrow-down ${
+                          block.active ? "d-none" : "d-block"
+                        }`}
+                      >
+                        <IconArrowDown aria-disabled="true" className="" />
+                      </span>
+                    </div>
                     {block.title}
                   </button>
                 </li>
