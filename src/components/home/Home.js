@@ -331,7 +331,7 @@ const Home = () => {
             {homeData.howToGuides.h2}
           </h2>
           <p className="mb-0 fs-7 text-center">{homeData.howToGuides.copy}</p>
-          <ul className="d-flex flex-wrap list-unstyled">
+          <ul className="d-flex flex-wrap list-unstyled mb-0">
             {homeData.howToGuides.blocks.map((block, i) => {
               const colBreak = "md";
 

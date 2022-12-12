@@ -18,8 +18,6 @@ const IconTitleBlock = ({ block, curCount, blockLength, colBreak }) => {
   };
   let IconName = IconMap[`${block.icon}`];
 
-  //console.log("blockLength", blockLength);
-  //console.log("curCount", curCount);
   if (curCount === blockLength - 1) {
     block.addClass += ` border-bottom-0 border-${colBreak}-right-0`;
   }
