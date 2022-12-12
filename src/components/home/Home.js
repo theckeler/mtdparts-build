@@ -4,7 +4,6 @@ import IconTitleBlock from "../elements/Blocks/IconTitle";
 import ImgTitleBlock from "../elements/Blocks/ImgTitle";
 
 import { ReactComponent as IconArrowUp } from "../images/arrow-up.svg";
-import { ReactComponent as IconArrowDown } from "../images/arrow-down.svg";
 import { ReactComponent as logoYardMan } from "../images/logo-yard-man.svg";
 import { ReactComponent as logoRemington } from "../images/logo-remington.svg";
 import { ReactComponent as logoWhiteOutdoor } from "../images/logo-white.svg";
@@ -40,6 +39,10 @@ const Home = () => {
     document.querySelector(`#tab-${e.target.id}`).classList.remove("d-none");
   };
 
+  const moreHelp = (e) => {
+    document.querySelector(`#more-info`).classList.toggle("d-none");
+  };
+
   return (
     <>
       <h1 className="visually-hidden">MTD Parts</h1>
@@ -54,34 +57,72 @@ const Home = () => {
       </section>
 
       {/* Parts finder/diagrams */}
-      <section
-        // style={{
-        //   background:
-        //     "linear-gradient(to right, rgb(6,101,58) 50%, #262626 50%)",
-        // }}
-        className="bg-secondary"
-      >
+      <section className="bg-secondary">
         <div className="container-lg g-0 d-flex flex-wrap">
           <div className="col-12 col-md-6 bg-primary text-white p-4 py-md-4 px-md-3">
             <h2 className="fs-4 text-center text-uppercase">Part Finder</h2>
-            <p className="fs-7 text-center w-md-75 mx-auto">
+            <p className="fs-8 text-center w-md-75 mx-auto">
               Search for parts using your model number, or the part number you
               are replacing.
             </p>
             <MenuMainSearch addClass="mb-2" />
-            <p className="fs-8 text-center mb-0">
-              Don’t know your model number? Click here for help.
+            <p className="fs-8 text-center mb-0 d-md-none">
+              <button
+                className="border-0 bg-transparent text-white"
+                onClick={moreHelp}
+              >
+                Don’t know your model number? Click here for help.
+              </button>
             </p>
           </div>
 
           <div className="col-12 col-md-6 bg-secondary text-white p-4 py-md-4 px-md-3">
             <h2 className="fs-4 text-center text-uppercase">Parts Diagrams</h2>
-            <p className="fs-7 text-center w-md-75 mx-auto">
+            <p className="fs-8 text-center w-md-75 mx-auto">
               Browse illustrated parts diagrams to find the part you need.
             </p>
             <Button copy="Search Diagrams" url="#top" addClass="bg-white" />
-            <p className="fs-8 text-center mb-0">For equipment 1995-present</p>
+            <p className="fs-8 text-center mb-0 mt-2">
+              For equipment 1995-present
+            </p>
           </div>
+        </div>
+      </section>
+
+      {/* More info */}
+      <section className="bg-light px-3 py-2 d-none d-md-block" id="more-info">
+        <div className="container-lg g-0 d-flex flex-column">
+          <ul className="d-flex flex-column flex-md-row list-unstyled mb-0">
+            <li className="col-12 col-md-6 col-xl-3 p-3">
+              <div className="d-flex justify-content-center align-items-center h-100">
+                <img
+                  src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg"
+                  alt=""
+                  className="w-100"
+                  style={{ maxWidth: "24rem" }}
+                />
+              </div>
+            </li>
+            <li className="col-12 col-md-6 col-xl-9 p-3">
+              <div className="d-flex flex-column align-items-start">
+                <h2 className="fs-5 text-uppercase mb-0 border-bottom w-100 pb-3">
+                  Model Number Example:
+                </h2>
+                <p className="fs-6 mb-0 mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  ac urna velit. Donec euismod ut tortor molestie pulvinar.
+                  Quisque non nunc erat. Aenean at ipsum augue. Morbi in justo
+                  vitae diam efficitur facilisis. Nullam ut malesuada turpis,
+                  interdum aliquet mauris. eros.
+                </p>
+                <Button
+                  copy="Need More Help?"
+                  url="#top"
+                  addClass="bg-white border mt-4 d-md-inline-flex w-auto px-4"
+                />
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
