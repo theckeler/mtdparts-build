@@ -68,7 +68,6 @@ const MenuLink = ({ link, ariaCurrent, addClass, footerNav }) => {
         <a
           href={link.url}
           {...ariaCurrent}
-          role="button"
           className={`nav-link d-block w-100 py-3 d-flex ${addClass}`}
         >
           {link.title}

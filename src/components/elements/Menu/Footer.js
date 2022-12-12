@@ -2,12 +2,8 @@ import MenuLoop from "./Loop";
 
 const Nav = ({ menuData, menuFooterData }) => {
   return (
-    <ul
-      className="viewport-width navbar-collapse nav list-unstyled flex-column"
-      aria-label="Footer Menu"
-      role="menu"
-    >
-      <li className="nav-item text-align-left w-100" role="menuitem">
+    <ul className="viewport-width navbar-collapse nav list-unstyled flex-column">
+      <li className="nav-item text-align-left w-100">
         <ul className="viewport-width nav list-unstyled flex-column flex-lg-row">
           <li className="col-lg-6">
             <div className="pe-lg-2">

@@ -1,0 +1,128 @@
+{
+  "brands": [
+    {
+      "title": "Yard-Man",
+      "img": "logoYardMan",
+      "url": "#top"
+    },
+    {
+      "title": "Remington",
+      "img": "logoRemington",
+      "url": "#top"
+    },
+    {
+      "title": "White Outdoor",
+      "img": "logoWhiteOutdoor",
+      "url": "#top"
+    },
+    {
+      "title": "Yard-Machines",
+      "img": "logoYardMachines",
+      "url": "#top"
+    },
+    {
+      "title": "Craftsman",
+      "img": "logoCraftsman",
+      "url": "#top"
+    },
+    {
+      "title": "Troy-Bilt",
+      "img": "logoTroyBilt",
+      "url": "#top"
+    },
+    {
+      "title": "Bolens",
+      "img": "logoBolens",
+      "url": "#top"
+    },
+    {
+      "title": "Robomow",
+      "img": "logoRobomow",
+      "url": "#top"
+    }
+  ],
+  "partType": [
+    {
+      "title": "Belts",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw89cb08ca/Homepage/belts-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Blades",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw63cc707c/Homepage/blades-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Carburetors",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwf04aeee3/Homepage/engine-parts-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Engine Parts",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwf04aeee3/Homepage/engine-parts-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Filters",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw39240ce1/Homepage/filters-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Shave Plates & Skid Shoes",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwb18b15ab/Homepage/skid-shoes-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Spark Plugs",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw0f3cfef8/Homepage/spark-plugs-part-type-category.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Tires & Wheels",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwb9176e26/Homepage/tires-wheels-part-type-category.jpg",
+      "url": "#top"
+    }
+  ],
+  "machineType": [
+    {
+      "title": "Snow Blowers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwf7da4c00/Homepage/snow-blower-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Riding Mowers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw707abde9/Homepage/rider-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Lawn Mowers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwc90909ad/Homepage/lawn-mower-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Log Splitters",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw86e8a86b/Homepage/log-splitter-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Chipper Shredders",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw9a5567d0/Homepage/chipper-shredder-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Tillers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dw51aec0bc/Homepage/tiller-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "String Trimmers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwa44624f8/Homepage/trimmer-category-thumb.jpg",
+      "url": "#top"
+    },
+    {
+      "title": "Leaf Blowers",
+      "img": "https://www.mtdparts.com/on/demandware.static/-/Sites-mtdparts-Library/default/dwba6daa14/Homepage/handheld-category-thumb.jpg",
+      "url": "#top"
+    }
+  ]
+}

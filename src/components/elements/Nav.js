@@ -26,6 +26,7 @@ const Nav = ({ menuData }) => {
       e.classList.toggle("d-none");
     });
     document.querySelector("body").classList.toggle("overflow-hidden");
+    document.querySelector("#main-nav-extras").classList.toggle("d-none");
     document
       .querySelectorAll("header .has-submenu .subnav")
       .forEach(function (e) {
@@ -36,14 +37,10 @@ const Nav = ({ menuData }) => {
   return (
     <nav
       className="bg-light box-shadow "
-      aria-labelledby="main-menu-desc"
       aria-label="Main Nav"
       role="navigation"
       id="nav-main"
     >
-      <h2 id="main-menu-desc" className="visually-hidden">
-        Main Menu
-      </h2>
       <div className="container-lg">
         <ul className="d-flex list-unstyled align-items-center py-2 px-1 mb-0">
           <li className="main-menu-button max-w-48" id="main-menu-button">
@@ -73,7 +70,7 @@ const Nav = ({ menuData }) => {
               <Logo />
             </a>
           </li>
-          <li className="ms-auto">
+          <li className="ms-auto" id="main-nav-extras">
             <MenuMainExtras />
           </li>
         </ul>

@@ -11,9 +11,7 @@ const Loop = ({ menuData, footerNav, addClass }) => {
         return (
           <li
             className={`w-100 nav-item text-align-left ${borderBottom}${hasSubmenu}`}
-            role="menuitem"
             key={i}
-            // onClick={(e) => link.sub && openSubMenu(e)}
           >
             <MenuLink {...{ link, ariaCurrent, footerNav, addClass }} />
           </li>

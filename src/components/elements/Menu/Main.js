@@ -8,19 +8,13 @@ const Nav = ({ menuData }) => {
       className="overflow-scroll remove-scrollbar min-vh-100 min-w-100 mh-0 max-vh-100 min-vh-0"
       id="main-menu"
     >
-      <ul className="list-unstyled pb-5" aria-label="Main Menu" role="menu">
+      <ul className="list-unstyled pb-5" aria-label="Main Menu">
         <MenuLoop menuData={menuData} footerNav={false} addClass="text-black" />
 
-        <li
-          className="nav-item text-align-left w-100 border-bottom py-1 px-2"
-          role="menuitem"
-        >
+        <li className="nav-item text-align-left w-100 border-bottom py-1 px-2">
           <MenuMainExtras />
         </li>
-        <li
-          className="nav-item text-align-left w-100 pb-5 px-3"
-          role="menuitem"
-        >
+        <li className="nav-item text-align-left w-100 pb-5 px-3">
           <MenuMainSearch darkTheme={true} />
         </li>
       </ul>

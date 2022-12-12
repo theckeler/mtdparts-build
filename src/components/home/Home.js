@@ -4,6 +4,7 @@ import IconTitleBlock from "../elements/Blocks/IconTitle";
 import ImgTitleBlock from "../elements/Blocks/ImgTitle";
 
 import { ReactComponent as IconArrowUp } from "../images/arrow-up.svg";
+import { ReactComponent as IconArrowDown } from "../images/arrow-down.svg";
 import { ReactComponent as logoYardMan } from "../images/logo-yard-man.svg";
 import { ReactComponent as logoRemington } from "../images/logo-remington.svg";
 import { ReactComponent as logoWhiteOutdoor } from "../images/logo-white.svg";
@@ -13,7 +14,7 @@ import { ReactComponent as logoTroyBilt } from "../images/logo-troy-bilt.svg";
 import { ReactComponent as logoBolens } from "../images/logo-bolens.svg";
 import { ReactComponent as logoRobomow } from "../images/logo-robomow.svg";
 
-import brandsData from "../data/brands.json";
+import tabsData from "../data/tabs.json";
 import homeData from "./data/home.json";
 
 const Home = () => {
@@ -28,12 +29,23 @@ const Home = () => {
     logoRobomow: logoRobomow,
   };
 
+  const changeTab = (e) => {
+    document.querySelectorAll(".tabs .tab").forEach(function (e) {
+      e.classList.add("d-none");
+    });
+    document.querySelectorAll(".nav-tabs button").forEach(function (e) {
+      e.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    document.querySelector(`#tab-${e.target.id}`).classList.remove("d-none");
+  };
+
   return (
     <>
       <h1 className="visually-hidden">MTD Parts</h1>
 
       {/* Small text block */}
-      <section className="bg-secondary py-1">
+      <section className="bg-black py-1">
         <div className="container-lg">
           <p className="text-white text-center text-uppercase fs-7 mb-0">
             Free Shipping on Parts Orders Over $45
@@ -43,10 +55,11 @@ const Home = () => {
 
       {/* Parts finder/diagrams */}
       <section
-        style={{
-          background:
-            "linear-gradient(to right, rgb(6,101,58) 50%, #262626 50%)",
-        }}
+        // style={{
+        //   background:
+        //     "linear-gradient(to right, rgb(6,101,58) 50%, #262626 50%)",
+        // }}
+        className="bg-secondary"
       >
         <div className="container-lg g-0 d-flex flex-wrap">
           <div className="col-12 col-md-6 bg-primary text-white p-4 py-md-4 px-md-3">
@@ -84,13 +97,15 @@ const Home = () => {
               return (
                 <li className="col-4" key={i}>
                   <button
-                    className={`d-flex justify-content-center align-items-center nav-link fs-8 w-100 text-uppercase ${
+                    className={`d-flex justify-content-center align-items-center nav-link fs-8 w-100 text-uppercase p-2 p-lg-3 ${
                       block.active && "active"
                     }`}
                     aria-current="page"
                     href="#top"
+                    onClick={changeTab}
+                    id={block.title.toLowerCase().replace(/\s/g, "-")}
                   >
-                    <IconArrowUp className="max-w-25" />
+                    <IconArrowUp className="pe-none max-w-25" />
                     {block.title}
                   </button>
                 </li>
@@ -99,9 +114,9 @@ const Home = () => {
           </ul>
 
           <div className="tabs">
-            <div id="tab-brand">
+            <div className="tab" id="tab-brand">
               <ul className="d-flex flex-wrap list-unstyled p-2">
-                {brandsData.map((brand, i) => {
+                {tabsData.brands.map((brand, i) => {
                   let ComponentName = LogoMap[`${brand.img}`];
 
                   return (
@@ -142,26 +157,18 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="d-none" id="tab-part-type">
-              <ul className="d-flex flex-wrap list-unstyled p-2">
-                {brandsData.map((brand, i) => {
-                  let ComponentName = LogoMap[`${brand.img}`];
 
+            <div className="tab d-none" id="tab-part-type">
+              <ul className="d-flex flex-wrap list-unstyled p-2">
+                {tabsData.partType.map((brand, i) => {
                   return (
                     <li className="col-6 col-md-3 p-2" key={i}>
                       <a
                         href="#top"
                         className="border d-flex flex-column align-content-center text-center text-decoration-none h-100"
                       >
-                        <div
-                          className="d-flex p-2 p-md-3"
-                          style={{ minHeight: "170px" }}
-                        >
-                          <ComponentName
-                            style={{
-                              width: "100%",
-                            }}
-                          />
+                        <div className="d-flex justify-content-center p-2 p-md-3">
+                          <img src={brand.img} alt="" />
                         </div>
                         <div className="bg-light p-1 text-uppercase fs-7 text-black border-top mt-auto">
                           {brand.title}
@@ -179,32 +186,20 @@ const Home = () => {
                   addClass="bg-secondary text-white"
                   darkTheme={true}
                 />
-                <p className="mb-0 mt-3 fs-7 text-center">
-                  For other brands, use our{" "}
-                  <a href="#top">Parts Diagrams & Lookup tool</a>.
-                </p>
               </div>
             </div>
-            <div className="d-none" id="tab-machine-type">
-              <ul className="d-flex flex-wrap list-unstyled p-2">
-                {brandsData.map((brand, i) => {
-                  let ComponentName = LogoMap[`${brand.img}`];
 
+            <div className="tab d-none" id="tab-machine-type">
+              <ul className="d-flex flex-wrap list-unstyled p-2">
+                {tabsData.machineType.map((brand, i) => {
                   return (
                     <li className="col-6 col-md-3 p-2" key={i}>
                       <a
                         href="#top"
                         className="border d-flex flex-column align-content-center text-center text-decoration-none h-100"
                       >
-                        <div
-                          className="d-flex p-2 p-md-3"
-                          style={{ minHeight: "170px" }}
-                        >
-                          <ComponentName
-                            style={{
-                              width: "100%",
-                            }}
-                          />
+                        <div className="d-flex justify-content-center p-2 p-md-3">
+                          <img src={brand.img} alt="" />
                         </div>
                         <div className="bg-light p-1 text-uppercase fs-7 text-black border-top mt-auto">
                           {brand.title}
@@ -222,10 +217,6 @@ const Home = () => {
                   addClass="bg-secondary text-white"
                   darkTheme={true}
                 />
-                <p className="mb-0 mt-3 fs-7 text-center">
-                  For other brands, use our{" "}
-                  <a href="#top">Parts Diagrams & Lookup tool</a>.
-                </p>
               </div>
             </div>
           </div>
