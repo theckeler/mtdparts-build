@@ -83,7 +83,7 @@ const Home = () => {
             <MenuMainSearch addClass="mb-2" />
             <p className="fs-8 text-center mb-0 d-md-none">
               <button
-                className="border-0 bg-transparent text-white"
+                className="border-0 bg-transparent text-white min-h-48"
                 onClick={moreHelp}
               >
                 Don’t know your model number? Click here for help.

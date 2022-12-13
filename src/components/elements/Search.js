@@ -13,7 +13,7 @@ const MenuMainSearch = ({ addClass, darkTheme }) => {
         aria-describedby={`search-${randID}`}
       />
       <button
-        className="btn btn-outline-secondary min-h-48 max-w-48 border"
+        className="btn btn-outline-secondary min-h-48 w-100 max-w-48 border"
         type="button"
         id={`search-${randID}`}
         aria-label="Search"

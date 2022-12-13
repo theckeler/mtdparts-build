@@ -7,15 +7,10 @@ const Footer = ({ menuData, menuFooterData }) => {
   return (
     <nav
       className="px-3 py-2 container-xxl"
-      aria-labelledby="footer-menu-desc"
       aria-label="Footer Menu"
       //role="navigation"
       id="nav-footer"
     >
-      <h2 id="footer-menu-desc" className="visually-hidden">
-        Footer Menu
-      </h2>
-
       <ul className="viewport-width nav list-unstyled flex-column">
         <li className="nav-item text-align-left w-100 border-bottom">
           <a
@@ -83,21 +78,15 @@ const Footer = ({ menuData, menuFooterData }) => {
             </li>
           </ul>
         </li>
-        <li className="nav-item text-align-left w-100 fs-7 mt-3">
-          <a href="#top" className="nav-link d-block w-100 text-white">
-            MTD Products LLC P.O. Box 368022. Cleveland, OH 44136
-          </a>
+        <li className="nav-item text-align-left w-100 fs-7 mt-3 text-white px-3">
+          MTD Products LLC P.O. Box 368022. Cleveland, OH 44136
         </li>
-        <li className="nav-item text-align-left w-100 fs-7 mt-3">
-          <a href="#top" className="nav-link d-block w-100 text-white">
-            If you experience any problems accessing this website, please call
-            us at 1-800-269-6215 for assistance.
-          </a>
+        <li className="nav-item text-align-left w-100 fs-7 mt-3 text-white px-3">
+          If you experience any problems accessing this website, please call us
+          at 1-800-269-6215 for assistance.
         </li>
-        <li className="nav-item text-align-left w-100 fs-7 mt-3">
-          <a href="#top" className="nav-link d-block w-100 text-white">
-            Copyright © MTD 2021
-          </a>
+        <li className="nav-item text-align-left w-100 fs-7 mt-3 text-white px-3">
+          Copyright © MTD 2021
         </li>
       </ul>
     </nav>
