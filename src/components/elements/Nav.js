@@ -74,8 +74,6 @@ const Nav = ({ menuData }) => {
             <MenuMainExtras />
           </li>
         </ul>
-
-        <MenuMain {...{ menuData }} />
       </div>
     </nav>
   );

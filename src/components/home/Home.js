@@ -127,7 +127,7 @@ const Home = () => {
                 <h2 className="fs-5 text-uppercase mb-0 border-bottom w-100 pb-3">
                   Model Number Example:
                 </h2>
-                <p className="fs-6 mb-0 mt-2">
+                <p className="fs-7 mb-0 mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   ac urna velit. Donec euismod ut tortor molestie pulvinar.
                   Quisque non nunc erat. Aenean at ipsum augue. Morbi in justo
