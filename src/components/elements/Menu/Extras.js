@@ -13,11 +13,13 @@ const Extras = () => {
             99
           </div>
           <IconCart />
+          <span className="visually-hidden">Cart</span>
         </button>
       </li>
       <li className="col-6 max-w-48 ">
         <button className="border-0 bg-transparent p-1">
           <IconAccount />
+          <span className="visually-hidden">Account</span>
         </button>
       </li>
     </ul>
